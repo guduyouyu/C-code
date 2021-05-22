@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+	int i = 0;
+	while (i <= 10)
+	{
+		if (i == 5)
+			continue;//这里的continue表示当i=5时，进入死循环
+		printf("%d", i);
+		i++;
+	}
+	return 0;
+}
+
+//当把i++变换位置后
+int main()
+{
+	int i = 0;
+	while (i <= 10)
+	{
+		i++;
+		if (i == 5)
+			continue;//这里的continue表示当i=5时，重新执行语句，并输出
+		printf("%d", i);
+		
+	}
+	return 0;
+}
